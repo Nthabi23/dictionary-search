@@ -10,13 +10,7 @@ function App() {
         <Dictionary />
         <footer>
           This project was coded by{" "}
-          <a
-            href="https://www.shecodes.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nthabiseng Monageng
-          </a>{" "}
+          Nthabiseng Monageng
           and is{" "}
           <a
             href="https://github.com/Nthabi23/dictionary-search"
