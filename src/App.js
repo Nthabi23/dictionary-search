@@ -27,7 +27,7 @@ function App() {
           </a>{" "}
           and{" "}
           <a
-            href="https://shecodes-dictionary.netlify.app/"
+            href="https://inspiring-narwhal-dcd6ce.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
