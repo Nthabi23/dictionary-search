@@ -5,15 +5,15 @@ import "./Result.css";
 
 export default function Result(props) {
 
-  if (props.definition) {
+  if (props.result) {
     return (
       <div className="Result">
         <section>
-          <h1>{props.definition.word}</h1>
-          <Phonetic phonetic={props.definition.phonetic} />
+          <h1>{props.result.word}</h1>
+          <Phonetic phonetic={props.result.phonetic} />
         </section>
 
-        {props.definition.meanings.map(function (meaning, index) {
+        {props.result.meanings.map(function (meaning, index) {
           return (
             <section key={index}>
               <Meaning meaning={meaning} />
