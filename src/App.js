@@ -11,9 +11,9 @@ export default function App() {
         </main>
         <footer className="App-footer">
           <small>
-            Coded by Chisenga Chisulo and is{" "}
+            Coded by Nthabiseng Monageng and is{" "}
             <a
-              href="https://github.com/chisengachisulo/dictionary-project"
+              href="https://github.com/Nthabi23/dictionary-search"
               target="_blank"
               rel="noreferrer"
             >
