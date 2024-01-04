@@ -1,36 +1,27 @@
-
 import Dictionary from "./Dictionary";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
-        
-        <Dictionary />
-        <footer>
-          This project was coded by{" "}
-          Nthabiseng Monageng
-          and is{" "}
-          <a
-            href="https://github.com/Nthabi23/dictionary-search"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            open-sourced on GitHub
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://inspiring-narwhal-dcd6ce.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            hosted on Netlify
-          </a>
+        <header className="App-header">Dictionary</header>
+        <main>
+          <Dictionary defaultKeyword="sunrise" />
+        </main>
+        <footer className="App-footer">
+          <small>
+            Coded by Chisenga Chisulo and is{" "}
+            <a
+              href="https://github.com/chisengachisulo/dictionary-project"
+              target="_blank"
+              rel="noreferrer"
+            >
+              open-sourced on Github
+            </a>
+          </small>
         </footer>
       </div>
     </div>
   );
 }
-
-export default App;
