@@ -12,22 +12,22 @@ export default function Dictionary() {
 
   function handleDictionaryResponse(response) {
     setResults(response.data);
+    setLoaded(true);
   }
 
   function handleSheCodesResponse(response) {
-    setPhotos(response.data.photo);
+    setPhotos(response.data.photos);
   }
 
   function search() {
     let apiKey = "4e73714c1tadb83363cf2o8c24a08c12";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-
+    let sheCodesApiKey = "4e73714c1tadb83363cf2o8c24a08c12";
+    let sheCodesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${sheCodesApiKey}`;
+    axios.get(sheCodesApiUrl).then(handleSheCodesResponse);
     axios.get(apiUrl).then(handleDictionaryResponse);
   }
 
-  let sheCodesApiKey = "4e73714c1tadb83363cf2o8c24a08c12";
-  let sheCodesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${sheCodesApiKey}`;
-  axios.get(sheCodesApiUrl).then(handleSheCodesResponse);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -39,7 +39,6 @@ export default function Dictionary() {
   }
 
   function load() {
-    setLoaded(true);
     search();
   }
 
